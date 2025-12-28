@@ -1,0 +1,327 @@
+{
+  "241": {
+    "241.1 Zulieferung, Energieträger, Lagerung": {
+      "241.1.0 APPARATE": [
+        "Erdsondenbohrungen",
+        "Thermal",
+        "Response",
+        "Gasleitung",
+        "Oeltankanlage",
+        "Schnitzelsilo",
+        "Pelletsraum"
+      ],
+      "241.1.1 Rohrleitungen": [
+        "Rohre",
+        "Formstücke",
+        "Verteiler",
+        "Entlüftungseinrichtungen",
+        "Rohrführungen und Fix Punkt Rohrschellen",
+        "Schweiss-; Press- und Dichtheitsmaterial",
+        "Verbindungs- und Aufhängematerial",
+        "Montagematerial, Befestigungen"
+      ],
+      "241.1.2 Armaturen, Instrumente": [
+        "Rückschlagklappen",
+        "Strangregulierungen",
+        "Absperrungen",
+        "Kompensatoren",
+        "Schmutzfänger",
+        "Entleerungen",
+        "Entlüftungen",
+        "Bezeichnungsschilder",
+        "Thermometer"
+      ],
+      "241.1.5 Transport und Montage": [
+        "Transporte",
+        "Montagen",
+        "Einbringung",
+        "Abdecken und Schützen der Komponenten",
+        "Gerüst ab Montagehöhe 4.50 m",
+        "Bausitzungen durch Bauleiter",
+        "Füllen und spülen der Heizungsanlage",
+        "Inbetriebsetzung, Einregulierung, Messungen",
+        "Provisorischer Betrieb der Anlage",
+        "Abnahme",
+        "Übergabe",
+        "Nachregulierung",
+        "Reinigung"
+      ],
+      "241.1.6 Wärmedämmung": [
+        "Thermische Isolationen",
+        "Durchführungen, Wand- und Dachdurchführungen"
+      ]
+    }
+  },
+  "242": {
+    "242.1 Wärmeerzeugung": {
+      "243.1.0 APPARATE": [
+        "Heizkörper",
+        "Luftheizapparate",
+        "Fussbodenheizung",
+        "TABS",
+        "Umwälzpumpen"
+      ],
+      "243.1.1 Rohrleitungen": [
+        "Rohre",
+        "Formstücke",
+        "Entlüftungseinrichtungen",
+        "Rohrführungen und Fix Punkt Rohrschellen",
+        "Schweiss- und Dichtheitsmaterial",
+        "Rohre mit Rostschutzfarbe grundieren",
+        "Verbindungs- und Aufhängematerial",
+        "Montagematerial, Befestigungen"
+      ],
+      "243.1.2 Armaturen, Instrumente": [
+        "Rückschlagklappen",
+        "Strangregulierungen",
+        "Absperrungen",
+        "Kompensatoren",
+        "Thermostatventile",
+        "Schmutzfänger",
+        "Entleerungen",
+        "Entlüftungen",
+        "Bezeichnungsschilder",
+        "Thermometer"
+      ],
+      "243.1.3 Regulierung": [
+        "Feldgeräte (Aktoren, Sensoren, Ventile, Wächter)",
+        "Steuerung / Regulierung (Leitsystem)",
+        "Dienstleistungen",
+        "Schema, Anlagebeschrieb, Dokumentation",
+        "Einregulierung",
+        "Mithilfe Datenpunkttest"
+      ],
+      "243.1.5 Transport und Montage": [
+        "Transporte",
+        "Montagen",
+        "Einbringung",
+        "Montage, Einbau sämtlicher Feldgeräte",
+        "Abdecken und Schützen der Komponenten",
+        "Gerüst ab Montagehöhe 4.50 m",
+        "Bausitzungen durch Bauleiter",
+        "Füllen und spülen der Heizungsanlage",
+        "Inbetriebsetzung, Einregulierung, Messungen",
+        "Provisorischer Betrieb der Anlage",
+        "Abnahme",
+        "Übergabe",
+        "Nachregulierung",
+        "Reinigung"
+      ],
+      "243.1.6 Wärmedämmung": [
+        "Thermische Isolationen",
+        "Durchführungen, Wand- und Dachdurchführungen"
+      ],
+      "243.1.7 Boden-Wärme-Dämmung": [
+        "Wärmedämmung",
+        "Trittschalldämmung",
+        "PE-Folie",
+        "Transport und Montage"
+      ],
+      "243.1.8 Dienstleistungen (Technische Bearbeitung)": [
+        "Bausitzungen",
+        "Montage- und Werkstatt-Planung, Bauleitung",
+        "Dichtheitskontrolle Rohrnetz",
+        "Technische Bearbeitung für: Heizkörper, Luftheizapparate etc., Umwälzpumpen, Apparate",
+        "Armaturen",
+        "Feldgeräte, Regulierung",
+        "Isolationen",
+        "Einmessen auf der Baustelle auf die Bauachsen",
+        "Aussparungen anzeichnen",
+        "Einregulierung und Inbetriebsetzung (Integral-Test)",
+        "Anlagekonformität, Dokumente",
+        "Vorabnahme, Abnahme (Installationsattest)",
+        "Übergabe, Instruktionen, Schulung",
+        "Nachregulierung",
+        "Wasseranlayse gemäss SWKI",
+        "Revisions- und Wartungsvorschriften, Schemas und Revisionspläne, 3-fach in Papierform + Elektronisch (Rot-Korex Pläne mit Änderungen mit Bauaufnahmen nach der Installation)",
+        "Service als Option bei Garantieverlängerung: Service-Paket: Servicekosten pro Anlage pro Jahr",
+        "Ausführungsplanung als Option",
+        "Qualifizierung IQ und OQ als Option (Anlage-Qualifizierung)"
+      ]
+    }
+  },
+  "243": {
+    "243.1 Wärmeverteilung": {
+      "243.1.0 APPARATE": [
+        "Heizkörper",
+        "Luftheizapparate",
+        "Fussbodenheizung",
+        "TABS",
+        "Umwälzpumpen"
+      ],
+      "243.1.1 Rohrleitungen": [
+        "Rohre",
+        "Formstücke",
+        "Entlüftungseinrichtungen",
+        "Rohrführungen und Fix Punkt Rohrschellen",
+        "Schweiss- und Dichtheitsmaterial",
+        "Rohre mit Rostschutzfarbe grundieren",
+        "Verbindungs- und Aufhängematerial",
+        "Montagematerial, Befestigungen"
+      ],
+      "243.1.2 Armaturen, Instrumente": [
+        "Rückschlagklappen",
+        "Strangregulierungen",
+        "Absperrungen",
+        "Kompensatoren",
+        "Thermostatventile",
+        "Schmutzfänger",
+        "Entleerungen",
+        "Entlüftungen",
+        "Bezeichnungsschilder",
+        "Thermometer"
+      ],
+      "243.1.3 Regulierung": [
+        "Feldgeräte (Aktoren, Sensoren, Ventile, Wächter)",
+        "Steuerung / Regulierung (Leitsystem)",
+        "Dienstleistungen",
+        "Schema, Anlagebeschrieb, Dokumentation",
+        "Einregulierung",
+        "Mithilfe Datenpunkttest"
+      ],
+      "242.1.4 Schaltschrank": [""],
+      "243.1.5 Transport und Montage": [
+        "Transporte",
+        "Montagen",
+        "Einbringung",
+        "Montage, Einbau sämtlicher Feldgeräte",
+        "Abdecken und Schützen der Komponenten",
+        "Gerüst ab Montagehöhe 4.50 m",
+        "Bausitzungen durch Bauleiter",
+        "Füllen und spülen der Heizungsanlage",
+        "Inbetriebsetzung, Einregulierung, Messungen",
+        "Provisorischer Betrieb der Anlage",
+        "Abnahme",
+        "Übergabe",
+        "Nachregulierung",
+        "Reinigung"
+      ],
+      "243.1.6 Wärmedämmung": [
+        "Thermische Isolationen",
+        "Durchführungen, Wand- und Dachdurchführungen"
+      ],
+      "243.1.7 Boden-Wärme-Dämmung": [
+        "Wärmedämmung",
+        "Trittschalldämmung",
+        "PE-Folie",
+        "Transport und Montage"
+      ],
+      "243.1.8 Dienstleistungen (Technische Bearbeitung)": [
+        "Bausitzungen",
+        "Montage- und Werkstatt-Planung, Bauleitung",
+        "Dichtheitskontrolle Rohrnetz",
+        "Technische Bearbeitung für: Heizkörper, Luftheizapparate etc., Umwälzpumpen, Apparate",
+        "Armaturen",
+        "Feldgeräte, Regulierung",
+        "Isolationen",
+        "Einmessen auf der Baustelle auf die Bauachsen",
+        "Aussparungen anzeichnen",
+        "Einregulierung und Inbetriebsetzung (Integral-Test)",
+        "Anlagekonformität, Dokumente",
+        "Vorabnahme, Abnahme (Installationsattest)",
+        "Übergabe, Instruktionen, Schulung",
+        "Nachregulierung",
+        "Wasseranlayse gemäss SWKI",
+        "Revisions- und Wartungsvorschriften, Schemas und Revisionspläne, 3-fach in Papierform + Elektronisch (Rot-Korex Pläne mit Änderungen mit Bauaufnahmen nach der Installation)",
+        "Service als Option bei Garantieverlängerung: Service-Paket: Servicekosten pro Anlage pro Jahr",
+        "Ausführungsplanung als Option",
+        "Qualifizierung IQ und OQ als Option (Anlage-Qualifizierung)"
+      ]
+    }
+  },
+  "244": {
+    "244.1 MATERIALSPEZIFIKATION": {
+      "244.1.0 APPARATE": [
+        "Monoblocs",
+        "Ventilatoren",
+        "Spez. Absauganlagen (für Staub, Farbe, Schweissen)",
+        "Befeuchter / Entfeuchter",
+        "Adsorbtions-Trockner",
+        "Umluftkühlgeräte",
+        "Zonen-Lufterhitzer, Zonen-Luftkühler",
+        "Laminarflow",
+        "Frequenzumrichter (ev. unter Regulierung)",
+        "Abluftreinigungsanlagen"
+      ],
+      "244.1.1 Kanäle und Rohrleitungen": [
+        "Kanäle",
+        "Rohre",
+        "Formstücke",
+        "Flexible Leitungen, Schläuche",
+        "Einlegeschläuche, Verteilkasten",
+        "Verbindungs- und Aufhängematerial",
+        "Montagematerial, Befestigungen"
+      ],
+      "244.1.2 Armaturen": [
+        "Ein- / Auslässe",
+        "Maschengitter",
+        "Wetterschutzgitter, Aussenluftfassungen",
+        "Fortluftaustritt",
+        "Brandschutzklappen, Brandschutzelemente",
+        "Spez. Luft-Deckensysteme, Kühldecken, Kühlbalken",
+        "Küchendecken, Küchenhauben mit Fettfilter",
+        "Filtergehäuse, Filter",
+        "Spezielle Filterauslässe mit Endfilter",
+        "Liftschacht-Entlüftungsklappen",
+        "Einstellklappen, Gliederklappen, Jalousieklappen, Irisblenden",
+        "Volumenstromregler, Konstant / Variabel",
+        "Schalldämpfer",
+        "Bezeichnungsschilder",
+        "Thermometer",
+        "Luftrichtungspfeile",
+        "Luftmengenmesspunkte"
+      ],
+      "244.1.3 Regulierung": [
+        "Feldgeräte (Aktoren, Sensoren, Ventile, Wächter)",
+        "Steuerung / Regulierung (Leitsystem)",
+        "Dienstleistungen",
+        "Schema, Anlagebeschrieb, Dokumentation",
+        "Einregulierung",
+        "Mithilfe Datenpunkttest"
+      ],
+      "244.1.4 Schaltschrank": [""],
+      "244.1.5 Transport und Montage": [
+        "Transporte",
+        "Montagen",
+        "Einbringung",
+        "Montage, Einbau sämtlicher Feldgeräte",
+        "Abdecken und Schützen der Komponenten",
+        "Gerüst ab Montagehöhe 4.50 m",
+        "Bausitzungen durch Bauleiter",
+        "Inbetriebsetzung, Einregulierung, Messungen",
+        "Provisorischer Betrieb der Anlage",
+        "Abnahme",
+        "Übergabe",
+        "Nachregulierung",
+        "Reinigung"
+      ],
+      "244.1.6 Wärmedämmung": [
+        "Thermische Isolationen",
+        "Brandschutzisolationen",
+        "Akustische Isolationen",
+        "Durchführungen, Wand- und Dachdurchführungen"
+      ],
+      "244.1.7 Dienstleistungen (Technische Bearbeitung)": [
+        "Bausitzungen",
+        "Montage- und Werkstatt-Planung, Bauleitung",
+        "Dichtheitskontrolle Kanal- und Rohrnetz",
+        "Technische Bearbeitung für: Monoblocs, Ventilatoren, Apparate",
+        "Armaturen",
+        "Feldgeräte, Regulierung",
+        "Isolationen",
+        "Einmessen auf der Baustelle auf die Bauachsen",
+        "Aussparungen anzeichnen",
+        "Einregulierung und Inbetriebsetzung (Integral-Test)",
+        "Anlagekonformität, Dokumente",
+        "Vorabnahme, Abnahme (Installationsattest)",
+        "Übergabe, Instruktionen, Schulung",
+        "Nachregulierung",
+        "Hygienekontrollen / Inspektion (gem. SWKI VA 104-01)",
+        "Revisions- und Wartungsvorschriften, Schemas und Revisionspläne, 3-fach in Papierform + Elektronisch (Rot-Korex Pläne mit Änderungen mit Bauaufnahmen nach der Installation)",
+        "Service als Option bei Garantieverlängerung: Service-Paket: Servicekosten pro Anlage pro Jahr",
+        "Ausführungsplanung als Option",
+        "Qualifizierung IQ und OQ als Option (Anlage-Qualifizierung)"
+      ]
+    }
+  }
+}
