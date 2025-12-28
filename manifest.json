@@ -1,0 +1,174 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.17/MicrosoftTeams.schema.json#",
+  "manifestVersion": "1.17",
+  "version": "1.0.2",
+  "id": "6dd24604-c446-417e-bbed-010691c9426d",
+  "localizationInfo": {
+    "defaultLanguageTag": "en-us"
+  },
+  "developer": {
+    "name": "bitenergie",
+    "websiteUrl": "https://github.com/bitenergie/igh-data-selector",
+    "privacyUrl": "https://github.com/bitenergie/igh-data-selector",
+    "termsOfUseUrl": "https://github.com/bitenergie/igh-data-selector"
+  },
+  "name": {
+    "short": "igh",
+    "full": "igh"
+  },
+  "description": {
+    "short": "A template to get started.",
+    "full": "A template to get started."
+  },
+  "icons": {
+    "outline": "assets/icon-32.png",
+    "color": "assets/icon-64.png"
+  },
+  "accentColor": "#230201",
+  "validDomains": ["https://bitenergie.github.io"],
+  "showLoadingIndicator": false,
+  "isFullScreen": false,
+  "defaultBlockUntilAdminAction": false,
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "Document.ReadWrite.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "extensions": [
+    {
+      "requirements": {
+        "scopes": ["document"]
+      },
+      "runtimes": [
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "name": "AddinCommands",
+                "minVersion": "1.1"
+              }
+            ],
+            "formFactors": ["desktop"]
+          },
+          "id": "runtime_1",
+          "type": "general",
+          "code": {
+            "page": "https://bitenergie.github.io/igh-data-selector/commands.html"
+          },
+          "lifetime": "short"
+        },
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "name": "AddinCommands",
+                "minVersion": "1.1"
+              }
+            ],
+            "formFactors": ["desktop"]
+          },
+          "id": "runtime_2",
+          "type": "general",
+          "code": {
+            "page": "https://bitenergie.github.io/igh-data-selector/taskpane.html"
+          },
+          "lifetime": "short",
+          "actions": [
+            {
+              "id": "ButtonId1_1",
+              "type": "openPage",
+              "displayName": "ButtonId1_1",
+              "view": "ButtonId1",
+              "multiselect": false,
+              "supportsNoItemContext": false
+            }
+          ]
+        }
+      ],
+      "ribbons": [
+        {
+          "requirements": {
+            "capabilities": [
+              {
+                "name": "AddinCommands",
+                "minVersion": "1.1"
+              }
+            ],
+            "scopes": ["document"],
+            "formFactors": ["desktop"]
+          },
+          "contexts": ["default"],
+          "tabs": [
+            {
+              "builtInTabId": "TabHome",
+              "groups": [
+                {
+                  "id": "CommandsGroup",
+                  "label": "Commands Group",
+                  "icons": [
+                    {
+                      "size": 16,
+                      "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-16.png"
+                    },
+                    {
+                      "size": 32,
+                      "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-32.png"
+                    },
+                    {
+                      "size": 80,
+                      "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-80.png"
+                    }
+                  ],
+                  "controls": [
+                    {
+                      "id": "TaskpaneButton",
+                      "type": "button",
+                      "label": "Show Task Pane",
+                      "supertip": { "title": "Title text of the super tip", "description": "description text of the super tip" },
+                      "icons": [
+                        {
+                          "size": 16,
+                          "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-16.png"
+                        },
+                        {
+                          "size": 32,
+                          "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-32.png"
+                        },
+                        {
+                          "size": 80,
+                          "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-80.png"
+                        }
+                      ],
+                      "actionId": "ButtonId1_1",
+                      "overriddenByRibbonApi": false,
+                      "enabled": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "alternates": [
+        {
+          "alternateIcons": {
+            "icon": {
+              "size": 32,
+              "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-32.png"
+            },
+            "highResolutionIcon": {
+              "size": 64,
+              "url": "https://bitenergie.github.io/igh-data-selector/assets/icon-64.png"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
