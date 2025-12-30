@@ -53,7 +53,7 @@ export class ProductWordView {
 
       selection.insertText("\n", Word.InsertLocation.end);
 
-      await context.sync();
+      //await context.sync();
     });
   }
 }

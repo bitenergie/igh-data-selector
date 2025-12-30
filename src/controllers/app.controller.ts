@@ -16,6 +16,7 @@ export class AppController {
   private textManager = new TextManager();
 
   private model?: CatalogModel;
+  private selectedProduct: Product | null = null;
 
   constructor(treeContainer: HTMLElement, productContainer: HTMLElement) {
     this.treeView = new TreeView(treeContainer);
@@ -68,8 +69,7 @@ export class AppController {
   }
 
   public onAddToWord(): void {
-    const product: Product = this.model.selectProduct(this.model.selectedId!);
-    this.wordView.insert(product);
+    this.wordView.insert(this.selectedProduct!);
   }
 
   private init(): void {
@@ -80,7 +80,7 @@ export class AppController {
   }
 
   private onTreeLeafClick(productId: string): void {
-    const product = this.model.selectProduct(productId);
-    this.productView.render(product);
+    this.selectedProduct = this.model.selectProduct(productId);
+    this.productView.render(this.selectedProduct);
   }
 }

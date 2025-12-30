@@ -12,11 +12,12 @@ const treeContainer = document.getElementById("treeview")!;
 const productContainer = document.getElementById("product-details")!;
 const controller = new AppController(treeContainer, productContainer);
 
+
 Office.onReady((info) => {
   if (info.host === Office.HostType.Word) {
     const fileInput = document.getElementById("inputFile") as HTMLInputElement;
     fileInput.onchange = () => {
-      mvc_reader();
+      mvc_reader(fileInput);
     };
 
     /* start of template controller */
@@ -40,11 +41,15 @@ Office.onReady((info) => {
         document.getElementById("insert-bkp-group-select") as HTMLSelectElement
       )
     );
+
+    document
+      .getElementById("add-to-word")!
+      .addEventListener("click", () => controller.onAddToWord());
+
   }
 });
 
-function mvc_reader(): void {
-  const fileInput = document.getElementById("inputFile") as HTMLInputElement;
+function mvc_reader(fileInput: HTMLInputElement): void {
   const file = fileInput.files?.[0];
 
   if (!file) {
@@ -56,13 +61,10 @@ function mvc_reader(): void {
 
   reader.onload = (event: ProgressEvent<FileReader>) => {
     const xml = new DOMParser().parseFromString(reader.result as string, "application/xml");
+    
+    controller.setModel(new CatalogModel(xml));
 
-    const model = new CatalogModel(xml);
-    controller.setModel(model);
 
-    document
-      .getElementById("add-to-word")!
-      .addEventListener("click", () => controller.onAddToWord());
   };
 
   reader.readAsText(file);
