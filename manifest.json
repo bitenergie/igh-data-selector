@@ -13,12 +13,12 @@
     "termsOfUseUrl": "https://github.com/bitenergie/igh-data-selector"
   },
   "name": {
-    "short": "igh",
-    "full": "igh"
+    "short": "IGH Data Selector",
+    "full": "IGH Data Selector"
   },
   "description": {
-    "short": "A template to get started.",
-    "full": "A template to get started."
+    "short": "Load data from IGH xml files into Word.",
+    "full": "Load data from IGH xml files into Word."
   },
   "icons": {
     "outline": "assets/icon-32.png",
@@ -50,7 +50,7 @@
             "capabilities": [
               {
                 "name": "AddinCommands",
-                "minVersion": "1.1"
+                "minVersion": "1.3"
               }
             ],
             "formFactors": ["desktop"]
@@ -128,8 +128,8 @@
                     {
                       "id": "TaskpaneButton",
                       "type": "button",
-                      "label": "Show Task Pane",
-                      "supertip": { "title": "Title text of the super tip", "description": "description text of the super tip" },
+                      "label": "IGH Data Selector",
+                      "supertip": { "title": "IGH Taskpane", "description": "Open the IGH Taskpane Panel" },
                       "icons": [
                         {
                           "size": 16,

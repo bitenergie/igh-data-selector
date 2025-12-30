@@ -50,9 +50,6 @@ npm run build:dev
 You can use the provided npm scripts and the available VS Code tasks to launch and debug the add-in for desktop Office apps. Example commands:
 
 ```bash
-# Start and sideload the add-in for Excel Desktop
-npm run start -- desktop --app excel
-
 # Start and sideload the add-in for Word Desktop
 npm run start -- desktop --app word
 
