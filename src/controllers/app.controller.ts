@@ -69,6 +69,7 @@ export class AppController {
   }
 
   public onAddToWord(): void {
+    
     this.wordView.insert(this.selectedProduct!);
   }
 

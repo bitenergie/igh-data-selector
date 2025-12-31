@@ -11,6 +11,17 @@ export class ProductWordView {
     await Word.run(async (context: Word.RequestContext) => {
       const selection: Word.Range = context.document.getSelection();
 
+      const style: Word.Style = context.document.getStyles().getByNameOrNullObject("BKP Materialauszug Text");
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        selection.insertText(`Please load a template first!\n`, Word.InsertLocation.start).font.color = "red";
+        console.warn(
+          `There's an existing style with the name "BKP Materialauszug Text"! Please load a template.`
+        );
+        return;
+      }
       /* Title (Position) */
       // selection.insertText(`Pos. ${this.positionCounter++}\n`, Word.InsertLocation.end);
 
@@ -24,11 +35,11 @@ export class ProductWordView {
       sel.font.italic = true;
 
       if (product.longText) {
-        sel = selection.insertText(
-          formatTextToMarkdown(product.longText) + "\n",
-          Word.InsertLocation.end
-        );
-        //sel = selection.insertText(product.longText + "\n\n", Word.InsertLocation.end)
+        // sel = selection.insertText(
+        //   formatTextToMarkdown(product.longText) + "\n",
+        //   Word.InsertLocation.end
+        // );
+        sel = selection.insertText(product.longText + "\n\n", Word.InsertLocation.end)
         sel.style = "BKP Materialauszug Text";
       }
 
@@ -54,37 +65,6 @@ export class ProductWordView {
       selection.insertText("\n", Word.InsertLocation.end);
 
       //await context.sync();
-    });
-  }
-}
-
-class WordStyles {
-  async addStyle() {
-    // Adds a new style.
-    await Word.run(async (context) => {
-      const newStyleName = (document.getElementById("new-style-name") as HTMLInputElement).value;
-      if (newStyleName == "") {
-        console.warn("Enter a style name to add.");
-        return;
-      }
-
-      const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
-      style.load();
-      await context.sync();
-
-      if (!style.isNullObject) {
-        console.warn(
-          `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
-        );
-        return;
-      }
-
-      const newStyleType = (document.getElementById("new-style-type") as HTMLSelectElement)
-        .value as unknown as Word.StyleType;
-      context.document.addStyle(newStyleName, newStyleType);
-      await context.sync();
-
-      console.log(newStyleName + " has been added to the style list.");
     });
   }
 }
