@@ -46,7 +46,27 @@ Office.onReady((info) => {
       .getElementById("add-to-word")!
       .addEventListener("click", () => controller.onAddToWord());
 
-  }
+    }
+
+
+    document.getElementById("btnBoldColon")!
+      .addEventListener("click", () =>
+        controller.formatter.boldWordsWithColon()
+      );
+
+    document.getElementById("btnUnderlineNumbers")!
+      .addEventListener("click", () =>
+        controller.formatter.underlineNumbers()
+      );
+
+    document.getElementById("btnApplyCustom")!
+      .addEventListener("click", () => {
+        const pat = (document.getElementById("searchPattern") as HTMLInputElement).value;
+        const rep = (document.getElementById("replacementText") as HTMLInputElement).value;
+
+        controller.formatter.customSearchReplace(pat, rep);
+      });
+
 });
 
 function mvc_reader(fileInput: HTMLInputElement): void {

@@ -3,6 +3,7 @@ import { TreeView } from "../views/tree.view";
 import { ProductView } from "../views/product.view";
 import { ProductWordView } from "../views/product-word.view";
 import { Product } from "../models/product.model";
+import { RegexController } from "./formatter.controller";
 
 import { TemplateModel, TextManager } from "../models/template.model";
 import { TemplateViewer } from "../views/template.view";
@@ -14,6 +15,7 @@ export class AppController {
   private templateModel = new TemplateModel();
   private templateViewer = new TemplateViewer(this.templateModel);
   private textManager = new TextManager();
+  public formatter = new RegexController();
 
   private model?: CatalogModel;
   private selectedProduct: Product | null = null;

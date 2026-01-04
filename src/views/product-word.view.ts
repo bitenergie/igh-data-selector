@@ -25,12 +25,12 @@ export class ProductWordView {
       /* Title (Position) */
       // selection.insertText(`Pos. ${this.positionCounter++}\n`, Word.InsertLocation.end);
 
-      let sel = selection.insertText(`${product.shortText ?? ""}\n\n`, Word.InsertLocation.end);
-      sel.style = "BKP Materialauszug Text";
+      let sel = selection.insertText(`${product.shortText ?? ""}\n`, Word.InsertLocation.before);
+      sel.style = "BKP 4 Übersicht";
       sel.font.bold = true;
 
       /* Article Number */
-      sel = selection.insertText(`Artikel-Nr.: ${product.artNr}\n`, Word.InsertLocation.end);
+      sel = selection.insertText(`Artikel-Nr.: ${product.artNr}\n\n`, Word.InsertLocation.end);
       sel.style = "BKP Materialauszug Text";
       sel.font.italic = true;
 
@@ -44,10 +44,11 @@ export class ProductWordView {
       }
 
       if (product.quantity) {
-        selection.insertText(
+        sel = selection.insertText(
           `\tMenge:\t${product.quantity.value} ${product.quantity.unit ?? ""}\t\t\n`,
           Word.InsertLocation.end
-        ).style = "BKP Materialauszug Kostenzusammenstellung";
+        )
+        sel.style = "BKP Materialauszug Kostenzusammenstellung";
       }
 
       //if (product.price) {
@@ -62,7 +63,8 @@ export class ProductWordView {
       //  // }
       //}
 
-      selection.insertText("\n", Word.InsertLocation.end);
+      sel.insertText("\n", Word.InsertLocation.end)
+      sel.style = "BKP Materialauszug Text";
 
       //await context.sync();
     });

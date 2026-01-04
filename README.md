@@ -11,7 +11,8 @@
 
 ## Repo Structure
 
-- `manifest.xml` — Office Add-in manifest.
+- `manifest.json` — Office Add-in manifest. 
+- `manifest-dev.xml` — Office Add-in manifest (old version of the manifest used for dev)
 - `package.json` — build and dev scripts.
 - `webpack.config.js` — bundling configuration.
 - `src/taskpane/taskpane.html` — main taskpane UI. See [src/taskpane/taskpane.html](src/taskpane/taskpane.html)
@@ -44,6 +45,45 @@ npm run dev-server
 ```bash
 npm run build:dev
 ```
+
+## Setup (Release for company) — Integrated Apps Portal)
+
+Follow these steps to create a production package and deploy via the Microsoft 365 integrated apps (admin) portal.
+
+1. Build the production package (creates a `dist/` folder):
+
+```bash
+npm run build
+```
+
+2. Create a ZIP package containing the files required by the portal. Include at minimum:
+
+- `manifest.json`
+- `assets/icon-32.png`
+- `assets/icon-64.png`
+
+Example commands:
+
+Cross-platform (macOS / Linux / WSL):
+
+```bash
+cd dist
+zip -r ../my-addin-release.zip manifest.json assets/icon-32.png assets/icon-64.png
+```
+
+Windows PowerShell:
+
+```powershell
+Compress-Archive -Path .\dist\manifest.json, .\dist\assets\icon-32.png, .\dist\assets\icon-64.png -DestinationPath .\my-addin-release.zip
+```
+
+3. Upload and deploy using the Microsoft 365 admin center (Integrated apps / Add private app).
+
+- In the Microsoft 365 admin center go to **Settings → Integrated apps** (or search for "Integrated apps"), choose to **Add a private app** and upload the ZIP package you created.
+- Configure app details, assign the add-in to users or groups, and finish publishing.
+
+See Microsoft's guidance on testing and deploying Microsoft 365 apps for full details: https://learn.microsoft.com/en-us/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide
+
 
 ## Run / Debug (Examples)
 
@@ -119,7 +159,7 @@ The add-in project that you've created contains code for a basic task pane add-i
 
 To explore an Office add-in project, you can start with the key files listed below.
 
-- The `./manifest.xml` file in the root directory of the project defines the settings and capabilities of the add-in.  <br>You can check whether your manifest file is valid by selecting **Validate Manifest File** option from the Office Add-ins Development Kit.
+- The `./manifest.json` file in the root directory of the project defines the settings and capabilities of the add-in.  <br>You can check whether your manifest file is valid by selecting **Validate Manifest File** option from the Office Add-ins Development Kit.
 - The `./src/taskpane/taskpane.html` file contains the HTML markup for the task pane.
 - The `./src/taskpane/taskpane.css` file contains the CSS that's applied to content in the task pane.
 - The `./src/taskpane/taskpane.ts` file contains the Office JavaScript API code that facilitates interaction between the task pane and the Word application.
