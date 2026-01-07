@@ -49,23 +49,17 @@ Office.onReady((info) => {
     }
 
 
-    document.getElementById("btnBoldColon")!
+    document.getElementById("btnBreakAfterColon")!
       .addEventListener("click", () =>
-        controller.formatter.boldWordsWithColon()
+        controller.formatter.breakAfterColon()
       );
 
-    document.getElementById("btnUnderlineNumbers")!
+    document.getElementById("btnRemoveParagraphs")!
       .addEventListener("click", () =>
-        controller.formatter.underlineNumbers()
+        controller.formatter.removeParagraphs()
       );
 
-    document.getElementById("btnApplyCustom")!
-      .addEventListener("click", () => {
-        const pat = (document.getElementById("searchPattern") as HTMLInputElement).value;
-        const rep = (document.getElementById("replacementText") as HTMLInputElement).value;
 
-        controller.formatter.customSearchReplace(pat, rep);
-      });
 
 });
 

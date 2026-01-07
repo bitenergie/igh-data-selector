@@ -40,14 +40,14 @@ export class AppController {
     }
   }
 
-  applyStyleBkp2(input: HTMLInputElement): void {
-    input.addEventListener("click", async () => {
-      await this.textManager.insertStyledText(
-        "Name:\tValue\tRight aligned",
-        "BKP Materialauszug Kostenzusammenstellung"
-      );
-    });
-  }
+  // applyStyleBkp2(input: HTMLInputElement): void {
+  //   input.addEventListener("click", async () => {
+  //     await this.textManager.insertStyledText(
+  //       "Name:\tValue\tRight aligned",
+  //       "BKP Materialauszug Kostenzusammenstellung"
+  //     );
+  //   });
+  // }
 
   bindTemplateInput(input: HTMLInputElement): void {
     input.addEventListener("change", async () => {
@@ -71,7 +71,6 @@ export class AppController {
   }
 
   public onAddToWord(): void {
-    
     this.wordView.insert(this.selectedProduct!);
   }
 

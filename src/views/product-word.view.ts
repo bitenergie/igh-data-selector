@@ -25,30 +25,30 @@ export class ProductWordView {
       /* Title (Position) */
       // selection.insertText(`Pos. ${this.positionCounter++}\n`, Word.InsertLocation.end);
 
-      let sel = selection.insertText(`${product.shortText ?? ""}\n`, Word.InsertLocation.before);
-      sel.style = "BKP 4 Übersicht";
-      sel.font.bold = true;
+      const _product = selection.insertText(`${product.shortText ?? ""}\n`, Word.InsertLocation.before);
+      _product.style = "BKP 4 Übersicht";
+      _product.font.bold = true;
 
       /* Article Number */
-      sel = selection.insertText(`Artikel-Nr.: ${product.artNr}\n\n`, Word.InsertLocation.end);
-      sel.style = "BKP Materialauszug Text";
-      sel.font.italic = true;
+      const articel_nr = selection.insertText(`Artikel-Nr.: ${product.artNr}\n\n`, Word.InsertLocation.end);
+      articel_nr.style = "BKP Materialauszug Text";
+      articel_nr.font.italic = true;
 
       if (product.longText) {
         // sel = selection.insertText(
         //   formatTextToMarkdown(product.longText) + "\n",
         //   Word.InsertLocation.end
         // );
-        sel = selection.insertText(product.longText + "\n\n", Word.InsertLocation.end)
-        sel.style = "BKP Materialauszug Text";
+        const longText = selection.insertText(product.longText + "\n\n", Word.InsertLocation.end)
+        longText.style = "BKP Materialauszug Text";
       }
 
       if (product.quantity) {
-        sel = selection.insertText(
-          `\tMenge:\t${product.quantity.value} ${product.quantity.unit ?? ""}\t\t\n`,
+        const quantity = selection.insertText(
+          `\tMenge:\t${product.quantity.value} ${product.quantity.unit ?? ""}\t\t`,
           Word.InsertLocation.end
         )
-        sel.style = "BKP Materialauszug Kostenzusammenstellung";
+        quantity.style = "BKP Materialauszug Kostenzusammenstellung";
       }
 
       //if (product.price) {
@@ -63,8 +63,8 @@ export class ProductWordView {
       //  // }
       //}
 
-      sel.insertText("\n", Word.InsertLocation.end)
-      sel.style = "BKP Materialauszug Text";
+      //const paragraphs =selection.insertText("\n", Word.InsertLocation.end)
+      //paragraphs.style = "BKP Materialauszug Text";
 
       //await context.sync();
     });

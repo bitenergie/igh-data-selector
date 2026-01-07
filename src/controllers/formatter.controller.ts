@@ -3,20 +3,20 @@ import { WordSelectionFormatter } from "../models/formatter.model";
 export class RegexController {
   private formatter = new WordSelectionFormatter();
 
-  async boldWordsWithColon(): Promise<void> {
+  async breakAfterColon(): Promise<void> {
     await this.formatter.formatSelection({
       pattern: "([A-z0-9äöüß\(\.\))]@):",
       matchCase: false,
       matchWholeWord: false,
       matchWildcards: true,
-      format: { bold: true },
+      format: { bold: false },
       replacement:"\n",
       insert_location: Word.InsertLocation.start
 
     });
   }
 
-  async underlineNumbers(): Promise<void> {
+  async removeParagraphs(): Promise<void> {
     await this.formatter.removeParagraphs();
   }
 
@@ -27,7 +27,7 @@ export class RegexController {
     await this.formatter.formatSelection({
       pattern,
       replacement,
-      format: { italic: true }
+      format: { italic: false }
     });
   }
 }
